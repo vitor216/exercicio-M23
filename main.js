@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nameElement = document.querySelector('#name');
     const usernameElement = document.querySelector('#login');
     const avatarElement = document.querySelector('#avatar');
-    const reposiElement = document.querySelector('#reposi');
+    const reposElement = document.querySelector('#repos');
     const followersElement = document.querySelector('#followers');
     const followingElement = document.querySelector('#following');
     const linkElement = document.querySelector('#link');
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         avatarElement.src = json.avatar_url;
         followingElement.innerText = json.following;
         followersElement.innerText = json.followers;
-        reposiElement.innerText = json.public_reposi;
+        reposElement.innerText = json.public_repos;
         linkElement.href = json.html_url;
     })
 })
